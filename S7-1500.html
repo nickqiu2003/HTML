@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{color:blue}
+        h2{color:brown}
+        h3{color:aqua}
+    </style>
+</head>
+<body>
+   <center><h1>THNN-1型 工业自动化通讯网络实验平台</h1></center> 
+   <table border="1" cellpadding="10" align="center">
+       <caption>PLC实时数据</caption>
+        <tr>
+            <th>序号</th>
+            <th>变量值</th>
+            <th>具体数值</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>数字量输入0.0</td>
+            <td>:="DI10.0":</td>
+         </tr>
+        <tr>
+            <td>2</td>
+            <td>数字量输入0.1</td>
+            <td>:="DI10.1":</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>数字量输入0.2</td>
+            <td>:="DI10.2":</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>数字量输入0.3</td>
+            <td>:="DI10.3":</td>
+        </tr>
+    </table>
+    <!--AWP_in_Varible Name="DQ0.0"-->
+    <form mothod="post">
+        <select name="DQ0.0">
+            <option Value=1>High</option>
+            <option value=0>Low</option>
+        </select>
+        <input type="submit" value="发送到PLC">
+    </form>
+</body>
+</html>
